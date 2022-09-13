@@ -1,0 +1,23 @@
+{% set pageSlug  = "news" %}
+{% set pageName = "Все новости" %}
+
+{% extends "layouts/default.html" %}
+{% block content %}
+	<main class="main">
+		<div class="container">
+			{% include '../blocks/components/title/title.html' %}
+			<div class="breadcrumb">
+	<ol class="breadcrumb__list">
+		<li class="breadcrumb__list__item">
+			<a class="breadcrumb__list__item__link" href="/">Главная</a>
+		</li>
+		<li class="breadcrumb__list__item breadcrumb__list__item--active">
+			Новости
+		</li>
+	</ol>
+</div>
+			{% include '../blocks/modules/all-news/all-news.html' %}
+		</div>
+
+	</main>
+{% endblock %}

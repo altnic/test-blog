@@ -1,0 +1,28 @@
+{% for item in news %}
+
+<li class="news-card">
+	<a href="/page.html" class="news-card__link">
+		<div class="news-card__picture picture-wrapper">
+			<picture>
+				<source srcset="./img/{{item.img.name}}.webp" type="image/webp" />
+				<img src="./img/{{item.img.name}}.jpg" alt="{{item.img.alt}}" />
+			</picture>
+		</div>
+		<div class="news-card__content">
+			<div class="group-category">
+				<ol class="category__list">
+					<li class="category__list__item">
+						{% for cat in item.category %} {{cat}} {% endfor %}
+					</li>
+				</ol>
+				<span class="data-news">{{item.data}}</span>
+			</div>
+			<p class="news-card__text">{{item.text}}</p>
+			<svg class="icon-arrow-diag">
+				<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+			</svg>
+		</div>
+	</a>
+</li>
+
+{% endfor %}

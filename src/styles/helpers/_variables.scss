@@ -1,0 +1,14 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+	// base
+	--font-family: "Frank", sans-serif;
+	--content-width: 1500px;
+	--container-offset: 15px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--color-primary: #373334;
+	--color-secondary: #9f0023;
+	--color-complementary: #959595;
+}

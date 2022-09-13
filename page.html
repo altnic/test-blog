@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Сайт Gulp Frontend Start Project"/>
+    <meta name="robots" content="noodp"/>
+    <meta name="keywords" content="gulp, webpack, nunjucks, sass, webp"/>
+    <meta name="theme-color" content="#fff"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
+		<link rel="icon" sizes="48x48" href="./img/favicons/favicon-48x48.png" type="image/png">
+		<link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.css"/>
+    <link rel="stylesheet" href="./styles/main.css"/>
+    <title>Gulp-FrontEnd</title>
+
+  </head>
+  <body>
+    <div
+      class="page__wrapper">
+      <header class="header">
+	<div class="container">
+		<div class="header__wrapper">
+			<div class="header__top">
+				<button class="offer-news">
+					<span class="offer-news__text">Предложить новость</span>
+				</button>
+				<div class="header__row">
+					<a class="link-tel" href="tel:+73513651711">8(3513)65-17-11</a>
+					<div class="header-search">
+						<svg class="search-icon">
+							<use xlink:href="./img/sprites/s-mono.svg#search"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<nav class="navigation">
+					<ul class="menu-list">
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Новости</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Телепроекты</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Реклама</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Онлайн</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Программа передач</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Еще</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__socials socials">
+					<p class="socials__text">Подписывайтесь на нас:</p>
+					<ul class="socials__list">
+						<li class="socials__list__item">
+							<a href="https://www.youtube.com/" target="_blank">
+								<svg class="social-icon social-icon--youtube">
+									<use xlink:href="./img/sprites/s-mono.svg#youtube"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__list__item">
+							<a href="/">
+								<svg class="social-icon social-icon--fb">
+									<use xlink:href="./img/sprites/s-mono.svg#fb"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__list__item">
+							<a href="https://vk.com/" target="_blank">
+								<svg class="social-icon social-icon--vk">
+									<use xlink:href="./img/sprites/s-mono.svg#vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__list__item">
+							<a href="https://ok.ru/" target="_blank">
+								<svg class="social-icon social-icon--ok">
+									<use xlink:href="./img/sprites/s-mono.svg#ok"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li class="socials__list__item">
+							<a href="/">
+								<svg class="social-icon social-icon--inst">
+									<use xlink:href="./img/sprites/s-mono.svg#inst"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+      
+    <main class="main page">
+			<div class="container">
+				<h1 class="title-page">Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции. Роддом Златоуста вновь откроет свои двери 8 февраля</h1>
+
+				<div class="breadcrumb">
+					<ol class="breadcrumb__list">
+						<li class="breadcrumb__list__item">
+							<a class="breadcrumb__list__item__link" href="/">Главная</a>
+						</li>
+						<li class="breadcrumb__list__item">
+							<a class="breadcrumb__list__item__link" href="/">Новости</a>
+						</li>
+						<li class="breadcrumb__list__item breadcrumb__list__item--active">
+							Медицина
+						</li>
+					</ol>
+				</div>
+				<section class="one-news">
+	<div class="one-news__container">
+		<div class="group-category">
+			<ol class="category__list">
+				<li class="category__list__item">Медицина</li>
+			</ol>
+			<span class="data-news">29/01/2021</span>
+		</div>
+		<div class="one-news__content">
+			<p
+				style="
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 1.35;
+					margin-bottom: 29px;
+				"
+			>
+				Ещё одна главная новость дня — с 8 февраля златоустовский роддом
+				возвращается к привычному формату работы. Госпитальную базу для лечения
+				больных коронавирусной инфекцией переводят в профильный режим. Приказ
+				Министерство здравоохранения Челябинской области выпустило 27 января.
+			</p>
+			<p style="font-weight: 300; line-height: 1.35; margin-bottom: 50px">
+				Напомним, перепрофилировать родильный дом решили в связи с ежедневным
+				большим приростом златоустовцев, заболевших ковид-19. За это время
+				лечение на госпитальной базе прошли свыше 1000 пациентов.
+			</p>
+			<div style="margin-bottom: 25px">
+				<div style="margin-bottom: 45px; position: relative">
+					<picture>
+						<source srcset="./img/video.webp" type="image/webp" />
+						<img src="./img/video.png" alt="news2" />
+					</picture>
+					<div
+						style="
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							width: 136px;
+							height: 136px;
+							background: rgba(255, 255, 255, 0.6499999761581421);
+							backdrop-filter: blur(4px);
+							border-radius: 50%;
+							cursor: pointer;
+						"
+					>
+						<div
+							style="
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								height: 100%;
+							"
+						>
+							<svg class="icon-play">
+								<use xlink:href="./img/sprites/s-mono.svg#play"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<p style="font-weight: 500; font-size: 20px; line-height: 1.35">
+						Александр Дорофеев
+					</p>
+					<span
+						style="
+							font-weight: 300;
+							font-size: 14px;
+							line-height: 1.35;
+							color: var(--color-complementary);
+						"
+						>главный врач родильного дома г. Златоуста:</span
+					>
+				</div>
+			</div>
+			<p style="font-weight: 300; line-height: 1.35">
+				«На сегодняшний день в МПЦ находятся 46 больных. Большая часть из них
+				будет переведена на базу квартала Медик и меньшая часть – на базу
+				долечивания, в район метзавода. В воскресенье к нам приезжает
+				дезостанция для обработки всех помещений. С 1 по 7 число проводится
+				заключительная дезинфекция всего родильного дома. С 8 числа мы начинаем
+				принимать беременных и рожениц нашего города и горнозаводской зоны».
+			</p>
+			<hr style="margin-top: 48px; margin-bottom: 48px" />
+			<p style="font-weight: 300; line-height: 1.35">
+				Подготовка к возвращению профильной деятельности больниц проводится
+				тщательным образом. Это полная дезинфекция помещений, забор ряда
+				лабораторных анализов. И только после разрешения всех инстанций
+				медицинское учреждение поступает к работе. Златоуст — не единственный
+				город, где в связи со стабилизацией обстановки с коронавирусной
+				инфекцией медицинские объекты возвращаются к плановому приёму пациентов.
+				Решение по сокращению коечных мест для больных ковидом принимается
+				оперативным штабом по борьбе с коронавирусной инфекцией при
+				Правительстве Челябинской области. Оставшиеся ковид-базы перейдут в
+				прежний режим работы при условии улучшения ситуации.
+			</p>
+		</div>
+		<div class="tags">
+	<div class="tags__row">
+		<div class="tags__col autor-col">
+			<p class="tags__col__title">Автор материала</p>
+			<div class="autor-col__name">Иван Анатольев</div>
+		</div>
+		<div class="tags__col tag-col">
+			<p class="tags__col__title">Теги</p>
+			<ol class="tag-col__category">
+				<li class="tag-col__category__item">
+					<a href="/" class="category__item__link">Роддом</a>
+				</li>
+				<li class="tag-col__category__item">
+					<a href="/" class="category__item__link">Вакцинация</a>
+				</li>
+				<li class="tag-col__category__item">
+					<a href="/" class="category__item__link">Коронавирус</a>
+				</li>
+			</ol>
+		</div>
+		<div class="tags__col share-col">
+			<p class="tags__col__title">Поделиться</p>
+			<div class="share-col__socials">
+				<ul class="socials__list">
+					<li class="socials__list__item">
+						<a href="https://www.youtube.com/" target="_blank">
+							<svg class="social-icon social-icon--youtube">
+								<use xlink:href="./img/sprites/s-mono.svg#youtube"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__list__item">
+						<a href="/">
+							<svg class="social-icon social-icon--fb">
+								<use xlink:href="./img/sprites/s-mono.svg#fb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__list__item">
+						<a href="https://vk.com/" target="_blank">
+							<svg class="social-icon social-icon--vk">
+								<use xlink:href="./img/sprites/s-mono.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__list__item">
+						<a href="https://ok.ru/" target="_blank">
+							<svg class="social-icon social-icon--ok">
+								<use xlink:href="./img/sprites/s-mono.svg#ok"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="socials__list__item">
+						<a href="/">
+							<svg class="social-icon social-icon--inst">
+								<use xlink:href="./img/sprites/s-mono.svg#inst"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+</section>
+
+			</div>
+			<section class="form-comments">
+	<div class="container">
+		<div class="one-news__container">
+			<div class="form-comments__content">
+				<h2 class="form-comments__title">Оставьте свой комментарий</h2>
+				<form class="form-box">
+					<div class="comment-box">
+						<input id="name" class="input-text" type="text" required />
+						<label class="label-form" for="name">Имя</label>
+					</div>
+					<div class="comment-box">
+						<input id="email" class="input-text" type="text" required />
+						<label class="label-form" for="email">Почта</label>
+					</div>
+
+					<div class="upload-file__wrapper">
+						<input
+							type="file"
+							name="files[]"
+							id="upload-file__input_1"
+							class="upload-file__input"
+							accept=".jpg, .jpeg, .png, .gif, .bmp, webp"
+						/>
+						<label class="upload-file__label" for="upload-file__input_1">
+							<svg class="icon-upload-file">
+								<use xlink:href="./img/sprites/s-mono.svg#paperclip"></use>
+							</svg>
+							<span class="upload-file__text">Прикрепить фото</span>
+						</label>
+					</div>
+
+					<div class="comment-box column-message">
+						<input id="message" class="input-text" type="text" required />
+						<label class="label-form" for="message">Комментарий</label>
+					</div>
+					<div class="action">
+						<button class="action-button">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+		</main>
+
+      <footer class="footer">
+	<div class="container">
+		<div class="footer__top">
+			<div class="footer__socials socials">
+				<p class="socials__text">Подписывайтесь на нас:</p>
+				<ul class="socials__list">
+					<li class="socials__list__item">
+						<a href="https://www.youtube.com/" target="_blank">
+							<svg class="social-icon social-icon--youtube">
+								<use xlink:href="./img/sprites/s-mono.svg#youtube"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__list__item">
+						<a href="/">
+							<svg class="social-icon social-icon--fb">
+								<use xlink:href="./img/sprites/s-mono.svg#fb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__list__item">
+						<a href="https://vk.com/" target="_blank">
+							<svg class="social-icon social-icon--vk">
+								<use xlink:href="./img/sprites/s-mono.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__list__item">
+						<a href="https://ok.ru/" target="_blank">
+							<svg class="social-icon social-icon--ok">
+								<use xlink:href="./img/sprites/s-mono.svg#ok"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="socials__list__item">
+						<a href="/">
+							<svg class="social-icon social-icon--inst">
+								<use xlink:href="./img/sprites/s-mono.svg#inst"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="copyright">
+				<p class="copyright__text">
+					<span>&#169;</span
+					><span class="creation-date">2021</span>«Златоустовское телевидение»
+				</p>
+				<a href="/" class="link__privacy-policy">Политика конфиденциальности</a>
+			</div>
+			<button class="btn-page">
+				<svg class="icon-cross">
+					<use xlink:href="./img/sprites/s-mono.svg#cross"></use>
+				</svg>
+				<span>PAGE</span>
+			</button>
+		</div>
+	</div>
+</footer>
+
+    </div>
+		
+	  <script src="./js/main.js"></script>
+  </body>
+</html>

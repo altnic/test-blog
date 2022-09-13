@@ -1,0 +1,22 @@
+.breadcrumb__list {
+	display: flex;
+	align-items: center;
+	&__item {
+		display: flex;
+		align-items: center;
+		color: var(--color-complementary);
+		&--active {
+			font-weight: 500;
+			color: var(--color-primary);
+		}
+		&:hover {
+			color: var(--color-primary);
+		}
+		&:not(:last-child):after {
+			display: block;
+			content: "/";
+			margin-left: 3px;
+			margin-right: 3px;
+		}
+	}
+}

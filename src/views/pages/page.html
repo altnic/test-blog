@@ -1,0 +1,27 @@
+{% set pageSlug  = "page" %}
+{% set pageName = "Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции. Роддом Златоуста вновь откроет свои двери 8 февраля" %}
+
+{% extends "layouts/default.html" %}
+
+{% block content %}
+    <main class="main page">
+			<div class="container">
+				{% include '../blocks/components/title/title.html' %}
+				<div class="breadcrumb">
+					<ol class="breadcrumb__list">
+						<li class="breadcrumb__list__item">
+							<a class="breadcrumb__list__item__link" href="/">Главная</a>
+						</li>
+						<li class="breadcrumb__list__item">
+							<a class="breadcrumb__list__item__link" href="/">Новости</a>
+						</li>
+						<li class="breadcrumb__list__item breadcrumb__list__item--active">
+							Медицина
+						</li>
+					</ol>
+				</div>
+				{% include '../blocks/modules/one-news/one-news.html' %}
+			</div>
+			{% include '../blocks/modules/form/form.html' %}
+		</main>
+{% endblock %}

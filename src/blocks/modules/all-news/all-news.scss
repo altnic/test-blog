@@ -1,0 +1,7 @@
+.news__list {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 70px 50px;
+	margin-bottom: 85px;
+}

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Сайт Gulp Frontend Start Project"/>
+    <meta name="robots" content="noodp"/>
+    <meta name="keywords" content="gulp, webpack, nunjucks, sass, webp"/>
+    <meta name="theme-color" content="#fff"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
+		<link rel="icon" sizes="48x48" href="./img/favicons/favicon-48x48.png" type="image/png">
+		<link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.css"/>
+    <link rel="stylesheet" href="./styles/main.css"/>
+    <title>Gulp-FrontEnd</title>
+
+  </head>
+  <body>
+    <div
+      class="page__wrapper">
+      <header class="header">
+	<div class="container">
+		<div class="header__wrapper">
+			<div class="header__top">
+				<button class="offer-news">
+					<span class="offer-news__text">Предложить новость</span>
+				</button>
+				<div class="header__row">
+					<a class="link-tel" href="tel:+73513651711">8(3513)65-17-11</a>
+					<div class="header-search">
+						<svg class="search-icon">
+							<use xlink:href="./img/sprites/s-mono.svg#search"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<nav class="navigation">
+					<ul class="menu-list">
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Новости</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Телепроекты</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Реклама</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Онлайн</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Программа передач</a>
+						</li>
+						<li class="menu-list__item">
+							<a class="menu-list__item__link" href="/">Еще</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__socials socials">
+					<p class="socials__text">Подписывайтесь на нас:</p>
+					<ul class="socials__list">
+						<li class="socials__list__item">
+							<a href="https://www.youtube.com/" target="_blank">
+								<svg class="social-icon social-icon--youtube">
+									<use xlink:href="./img/sprites/s-mono.svg#youtube"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__list__item">
+							<a href="/">
+								<svg class="social-icon social-icon--fb">
+									<use xlink:href="./img/sprites/s-mono.svg#fb"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__list__item">
+							<a href="https://vk.com/" target="_blank">
+								<svg class="social-icon social-icon--vk">
+									<use xlink:href="./img/sprites/s-mono.svg#vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__list__item">
+							<a href="https://ok.ru/" target="_blank">
+								<svg class="social-icon social-icon--ok">
+									<use xlink:href="./img/sprites/s-mono.svg#ok"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li class="socials__list__item">
+							<a href="/">
+								<svg class="social-icon social-icon--inst">
+									<use xlink:href="./img/sprites/s-mono.svg#inst"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+      
+	<main class="main">
+		<div class="container">
+			<h1 class="title-page">Все новости</h1>
+
+			<div class="breadcrumb">
+	<ol class="breadcrumb__list">
+		<li class="breadcrumb__list__item">
+			<a class="breadcrumb__list__item__link" href="/">Главная</a>
+		</li>
+		<li class="breadcrumb__list__item breadcrumb__list__item--active">
+			Новости
+		</li>
+	</ol>
+</div>
+			<section class="news">
+	<div class="selects-group">
+	<div class="custom-select">
+	<select>
+		<option value="0">Выбрать рубрику</option>
+		<option value="1">Медицина</option>
+		<option value="2">Общество</option>
+		<option value="3">Коммуналка</option>
+		<option value="4">Политика</option>
+		<option value="5">Спорт</option>
+		<option value="6">Вектор развития</option>
+		<option value="7">Технологии</option>
+		<option value="8">Импортозамещение</option>
+		<option value="9">Страхование</option>
+		<option value="10">Инвестиции</option>
+		<option value="11">Промышленность</option>
+		<option value="12">Образование</option>
+	</select>
+</div>
+<script>
+	var x, i, j, l, ll, selElmnt, a, b, c;
+	/*look for any elements with the class "custom-select":*/
+	x = document.getElementsByClassName("custom-select");
+	l = x.length;
+	for (i = 0; i < l; i++) {
+		selElmnt = x[i].getElementsByTagName("select")[0];
+		ll = selElmnt.length;
+		/*for each element, create a new DIV that will act as the selected item:*/
+		a = document.createElement("DIV");
+		a.setAttribute("class", "select-selected");
+		a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+		x[i].appendChild(a);
+		/*for each element, create a new DIV that will contain the option list:*/
+		b = document.createElement("DIV");
+		b.setAttribute("class", "select-items select-hide");
+		for (j = 1; j < ll; j++) {
+			/*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+			c = document.createElement("DIV");
+			c.innerHTML = selElmnt.options[j].innerHTML;
+			c.addEventListener("click", function (e) {
+				/*when an item is clicked, update the original select box,
+        and the selected item:*/
+				var y, i, k, s, h, sl, yl;
+				s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+				sl = s.length;
+				h = this.parentNode.previousSibling;
+				for (i = 0; i < sl; i++) {
+					if (s.options[i].innerHTML == this.innerHTML) {
+						s.selectedIndex = i;
+						h.innerHTML = this.innerHTML;
+						y = this.parentNode.getElementsByClassName("same-as-selected");
+						yl = y.length;
+						for (k = 0; k < yl; k++) {
+							y[k].removeAttribute("class");
+						}
+						this.setAttribute("class", "same-as-selected");
+						break;
+					}
+				}
+				h.click();
+			});
+			b.appendChild(c);
+		}
+		x[i].appendChild(b);
+		a.addEventListener("click", function (e) {
+			/*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+			e.stopPropagation();
+			closeAllSelect(this);
+			this.nextSibling.classList.toggle("select-hide");
+			this.classList.toggle("select-arrow-active");
+		});
+	}
+	function closeAllSelect(elmnt) {
+		/*a function that will close all select boxes in the document,
+  except the current select box:*/
+		var x,
+			y,
+			i,
+			xl,
+			yl,
+			arrNo = [];
+		x = document.getElementsByClassName("select-items");
+		y = document.getElementsByClassName("select-selected");
+		xl = x.length;
+		yl = y.length;
+		for (i = 0; i < yl; i++) {
+			if (elmnt == y[i]) {
+				arrNo.push(i);
+			} else {
+				y[i].classList.remove("select-arrow-active");
+			}
+		}
+		for (i = 0; i < xl; i++) {
+			if (arrNo.indexOf(i)) {
+				x[i].classList.add("select-hide");
+			}
+		}
+	}
+	/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+	document.addEventListener("click", closeAllSelect);
+</script>
+
+</div>
+
+	<ul class="news__list">
+		
+
+<li class="news-card">
+	<a href="/page.html" class="news-card__link">
+		<div class="news-card__picture picture-wrapper">
+			<picture>
+				<source srcset="./img/news1.webp" type="image/webp" />
+				<img src="./img/news1.jpg" alt="news1" />
+			</picture>
+		</div>
+		<div class="news-card__content">
+			<div class="group-category">
+				<ol class="category__list">
+					<li class="category__list__item">
+						 Медицина  Общество 
+					</li>
+				</ol>
+				<span class="data-news">02/02/2021</span>
+			</div>
+			<p class="news-card__text">Благодаря поддержке предпринимателей. Златоустовские поликлиники оснастили холодильными установками для хранения вакцины</p>
+			<svg class="icon-arrow-diag">
+				<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+			</svg>
+		</div>
+	</a>
+</li>
+
+
+
+<li class="news-card">
+	<a href="/page.html" class="news-card__link">
+		<div class="news-card__picture picture-wrapper">
+			<picture>
+				<source srcset="./img/news2.webp" type="image/webp" />
+				<img src="./img/news2.jpg" alt="news2" />
+			</picture>
+		</div>
+		<div class="news-card__content">
+			<div class="group-category">
+				<ol class="category__list">
+					<li class="category__list__item">
+						 Медицина 
+					</li>
+				</ol>
+				<span class="data-news">29/01/2021</span>
+			</div>
+			<p class="news-card__text">Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  Роддом Златоуста вновь откроет свои двери 8 февраля</p>
+			<svg class="icon-arrow-diag">
+				<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+			</svg>
+		</div>
+	</a>
+</li>
+
+
+
+<li class="news-card">
+	<a href="/page.html" class="news-card__link">
+		<div class="news-card__picture picture-wrapper">
+			<picture>
+				<source srcset="./img/news3.webp" type="image/webp" />
+				<img src="./img/news3.jpg" alt="news3" />
+			</picture>
+		</div>
+		<div class="news-card__content">
+			<div class="group-category">
+				<ol class="category__list">
+					<li class="category__list__item">
+						 Коммуналка 
+					</li>
+				</ol>
+				<span class="data-news">29/01/2021</span>
+			</div>
+			<p class="news-card__text">Осторожно, сосульки! Оттепель на этой неделе привела к тому, что на крышах многих домов образовались опасные ледяные наросты</p>
+			<svg class="icon-arrow-diag">
+				<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+			</svg>
+		</div>
+	</a>
+</li>
+
+
+
+<li class="news-card">
+	<a href="/page.html" class="news-card__link">
+		<div class="news-card__picture picture-wrapper">
+			<picture>
+				<source srcset="./img/news4.webp" type="image/webp" />
+				<img src="./img/news4.jpg" alt="news4" />
+			</picture>
+		</div>
+		<div class="news-card__content">
+			<div class="group-category">
+				<ol class="category__list">
+					<li class="category__list__item">
+						 Политика 
+					</li>
+				</ol>
+				<span class="data-news">29/01/2021</span>
+			</div>
+			<p class="news-card__text">В четыре раза меньше вопросов, чем обычно. В Златоусте прошло первое в 2021-м году Собрание депутатов</p>
+			<svg class="icon-arrow-diag">
+				<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+			</svg>
+		</div>
+	</a>
+</li>
+
+
+
+<li class="news-card">
+	<a href="/page.html" class="news-card__link">
+		<div class="news-card__picture picture-wrapper">
+			<picture>
+				<source srcset="./img/news5.webp" type="image/webp" />
+				<img src="./img/news5.jpg" alt="news5" />
+			</picture>
+		</div>
+		<div class="news-card__content">
+			<div class="group-category">
+				<ol class="category__list">
+					<li class="category__list__item">
+						 Коммуналка 
+					</li>
+				</ol>
+				<span class="data-news">29/01/2021</span>
+			</div>
+			<p class="news-card__text">В Златоусте сотрудники теротдела проверят магазин, из которого выбрасывали строительный мусор на контейнерную площадку</p>
+			<svg class="icon-arrow-diag">
+				<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+			</svg>
+		</div>
+	</a>
+</li>
+
+
+
+<li class="news-card">
+	<a href="/page.html" class="news-card__link">
+		<div class="news-card__picture picture-wrapper">
+			<picture>
+				<source srcset="./img/news6.webp" type="image/webp" />
+				<img src="./img/news6.jpg" alt="news6" />
+			</picture>
+		</div>
+		<div class="news-card__content">
+			<div class="group-category">
+				<ol class="category__list">
+					<li class="category__list__item">
+						 Общество 
+					</li>
+				</ol>
+				<span class="data-news">29/01/2021</span>
+			</div>
+			<p class="news-card__text">ДЧ: Первое Собрание депутатов 2021 года: планируется работа на весь год</p>
+			<svg class="icon-arrow-diag">
+				<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+			</svg>
+		</div>
+	</a>
+</li>
+
+
+
+	</ul>
+	<div class="random-news">
+	<div class="news-card">
+		<a href="/page.html" class="news-card__link">
+			<div class="news-card__picture picture-wrapper">
+				<picture>
+					<source srcset="./img/news2.webp" type="image/webp" />
+					<img src="./img/news2.jpg" alt="news2" />
+				</picture>
+			</div>
+			<div class="news-card__content">
+				<div class="group-category">
+					<ol class="category__list">
+						<li class="category__list__item">Медицина</li>
+					</ol>
+					<span class="data-news">29/01/2021</span>
+				</div>
+				<p class="news-card__text">
+					Госпитальная база закрыта, учреждение вернётся в «доковидный» режим
+					после дезинфекции. Роддом Златоуста вновь откроет свои двери 8 февраля
+				</p>
+				<p class="news-card__subtext">
+					Ещё одна главная новость дня — с 8 февраля златоустовский роддом
+					возвращается к привычному формату работы. Госпитальную базу для
+					лечения больных коронавирусной инфекцией переводят...
+				</p>
+			</div>
+			<svg class="icon-arrow-diag">
+				<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+			</svg>
+		</a>
+	</div>
+</div>
+ <div class="pagination">
+	<div class="pagination__inner">
+		<ul class="pagination__list">
+			<li class="pagination__list__item active"><span>1</span></li>
+			<li class="pagination__list__item"><span>2</span></li>
+			<li class="pagination__list__item"><span>3</span></li>
+			<li class="pagination__list__item"><span>4</span></li>
+			<li class="pagination__list__item"><span>...</span></li>
+			<li class="pagination__list__item"><span>123</span></li>
+		</ul>
+		<div class="pagination__control">
+			<button class="pagination__control__prev">
+				<svg class="icon-arrow-diag">
+					<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+				</svg>
+			</button>
+			<button class="pagination__control__next active">
+				<svg class="icon-arrow-diag">
+					<use xlink:href="./img/sprites/s-mono.svg#arrow-diag"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+
+</section>
+
+		</div>
+
+	</main>
+
+      <footer class="footer">
+	<div class="container">
+		<div class="footer__top">
+			<div class="footer__socials socials">
+				<p class="socials__text">Подписывайтесь на нас:</p>
+				<ul class="socials__list">
+					<li class="socials__list__item">
+						<a href="https://www.youtube.com/" target="_blank">
+							<svg class="social-icon social-icon--youtube">
+								<use xlink:href="./img/sprites/s-mono.svg#youtube"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__list__item">
+						<a href="/">
+							<svg class="social-icon social-icon--fb">
+								<use xlink:href="./img/sprites/s-mono.svg#fb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__list__item">
+						<a href="https://vk.com/" target="_blank">
+							<svg class="social-icon social-icon--vk">
+								<use xlink:href="./img/sprites/s-mono.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__list__item">
+						<a href="https://ok.ru/" target="_blank">
+							<svg class="social-icon social-icon--ok">
+								<use xlink:href="./img/sprites/s-mono.svg#ok"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="socials__list__item">
+						<a href="/">
+							<svg class="social-icon social-icon--inst">
+								<use xlink:href="./img/sprites/s-mono.svg#inst"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="copyright">
+				<p class="copyright__text">
+					<span>&#169;</span
+					><span class="creation-date">2021</span>«Златоустовское телевидение»
+				</p>
+				<a href="/" class="link__privacy-policy">Политика конфиденциальности</a>
+			</div>
+			<button class="btn-page">
+				<svg class="icon-cross">
+					<use xlink:href="./img/sprites/s-mono.svg#cross"></use>
+				</svg>
+				<span>PAGE</span>
+			</button>
+		</div>
+	</div>
+</footer>
+
+    </div>
+		
+	  <script src="./js/main.js"></script>
+  </body>
+</html>
